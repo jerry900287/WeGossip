@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/parse-1.6.5.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      <ion-content ng-controller="ExampleController">
+        <button class="button" ng-click="savePerson(&apos;Nic&apos;, &apos;Raboy&apos;)">Save Nic Raboy</button>
+        <button class="button" ng-click="savePerson(&apos;Maria&apos;, &apos;Campos&apos;)">Save Maria Campos</button>
+        <button class="button" ng-click="savePerson(&apos;Bruce&apos;, &apos;Raboy&apos;)">Save Bruce Raboy</button>
+        <button class="button" ng-click="getPeople()">Print All People</button>
+        <button class="button" ng-click="getPeople({lastname: &apos;Raboy&apos;})">Print All Raboys</button>
+        <button class="button" ng-click="parsecall(fff)">Parse Call</button>
+        <button class="button" ng-click="randomnumber()">Random Num</button>
+        <button class="button" ng-click="sendmaill()">Sendmaill</button>
+        <button class="button" ng-click="template()">Template</button>
+        <button class="button" ng-click="sendmaill2()">Wegossip</button>
+        <button class="button" ng-click="regist()">regist</button>
+        <button class="button" ng-click="registparsecall()">registparsecall</button>
+        <button class="button" ng-click="login()">Login</button>
+        <button class="button" ng-click="changeusername()">ChangeUserName</button>
+          <button class="button" ng-click="currentuser()">Current</button>
+      </ion-content>
+    </ion-pane>
+
+  </body>
+</html>
